@@ -29,15 +29,7 @@
         </li>
         <li class="flex "><mat-icon class="primary-text-color mx-1">chat</mat-icon> Chat</li>
 
-        <li><mat-icon class="primary-text-color mx-1">chat</mat-icon> Chat</li>
-        <li><mat-icon class="primary-text-color mx-1">chat</mat-icon> Chat</li>
-
-        <li><mat-icon class="primary-text-color mx-1">chat</mat-icon> Chat</li>
-        <li><mat-icon class="primary-text-color mx-1">chat</mat-icon> Chat</li>
-        <li><mat-icon class="primary-text-color mx-1">chat</mat-icon> Chat</li>
-        <li><mat-icon class="primary-text-color mx-1">chat</mat-icon> Chat</li>
-        <li><mat-icon class="primary-text-color mx-1">chat</mat-icon> Chat</li>
-
+       
       </ul>
       <label class="mx-2 font-medium">Accounts</label>
       <ul>
@@ -49,8 +41,8 @@
     <div class="sidebar-footer  sticky bottom-0  flex flex-row border-b border-gray-300 border-[1px] gap-1">
       <div> <mat-icon class="primary-text-color mx-1">home</mat-icon></div>
 
-      <div class="flex flex-col mx-1">
-        <div class="text-red-700 font-medium"> Emergincy Hotlines:</div>
+      <div class="flex flex-col ">
+        <div class="text-red-700 font-medium">Emergincy Hotlines:</div>
         <div> +234 1332 2342</div>
 
       </div>
@@ -60,7 +52,7 @@
 
     <!-- toolbar -->
     <div class=" mx-1 rounded-lg h-70 flex items-center justify-between p-4 bg-gray-100">
-      <div class="flex-grow mx-2 ">
+      <div class="flex-1 mx-2 ">
         <input type="text" placeholder="Search..."
           class="w-full px-2 py-2 bg-white text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
       </div>
@@ -83,7 +75,7 @@
       </div>
     </div>
     <!-- grid content -->
-    <div class=" mx-1 grid grid-cols-3 gap-4 sm:grid-cols-3 md:grid-cols-3 gap-4">
+    <div class=" my-1 mx-1 grid grid-cols-3 gap-4 sm:grid-cols-1 md:grid-cols-1 gap-4">
       <!-- First Row -->
       <div class="w-full bg-gray-400 p-4  h-400"></div>
       <div class="w-full bg-gray-400 p-4 h-400 "></div>
@@ -96,8 +88,35 @@
       </div>
       <div class="w-full bg-gray-400 p-4 h-400"></div>
     </div>
-    <div>
-      <ngx-datatable [rows]="rows" [footerHeight]="50" [headerHeight]="50" [rowHeight]="50">
+    <div class="w-full-table mx-2">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>role</th>
+            <th>Appointmet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>marwa</td>
+            <td>admin</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>marwa</td>
+            <td>admin</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>marwa</td>
+            <td>admin</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <!-- <ngx-datatable [rows]="rows" [footerHeight]="50" [headerHeight]="50" [rowHeight]="50">
 
         <ngx-datatable-column [width]="50" name="name" prop="name">
 
@@ -108,7 +127,7 @@
         <ngx-datatable-column [width]="50" name="appointment" prop="appointment">
 
         </ngx-datatable-column>
-      </ngx-datatable>
+      </ngx-datatable> -->
     </div>
 
   </div>

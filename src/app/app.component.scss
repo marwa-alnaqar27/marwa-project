@@ -95,10 +95,37 @@ $primary-color: #072940;
 .sidebar-menu li.active {
     background-color: #7a7a7a52;
     font-size: medium;
+    font-weight: bold;
     color: $primary-color;
+    cursor: pointer;
 
 }
+.w-full{
+    width: 100%;
+}
 
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f4f4f4;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1;
+  }
 .h-70 {
     height: 70px;
 }
@@ -113,4 +140,7 @@ $primary-color: #072940;
 
 .primary-text-color {
     color: $primary-color;
+}
+.my-1{
+    margin-top: 1rem;
 }
