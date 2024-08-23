@@ -1,0 +1,116 @@
+$primary-bg-color: #F2F2F2;
+$primary-bg-dark-color: #333;
+$primary-color: #072940;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 350px;
+    background-color: $primary-bg-color ;
+
+}
+
+/* Custom scrollbar styles for Firefox */
+.sidebar-menu {
+
+    scrollbar-width: thin;
+
+    scrollbar-color: #888 #f1f1f1;
+
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+    background: #888;
+
+    border-radius: 6px;
+
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb:hover {
+    background: #7a7a7a52;
+
+}
+
+.sidebar-menu li,
+.sidebar-header,
+.sidebar-footer {
+    padding: 1rem 2rem;
+}
+
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.content {
+    width: 100%;
+}
+
+.w-400 {
+    width: 400px;
+
+}
+
+.h-400 {
+    width: 400px;
+    height: 400px;
+}
+
+.mx-2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.sidebar-header,
+.sidebar-footer {
+
+    background-color: $primary-bg-color ;
+}
+
+
+
+.sidebar-menu li:hover,
+.sidebar-menu li.active {
+    background-color: #7a7a7a52;
+    font-size: medium;
+    color: $primary-color;
+
+}
+
+.h-70 {
+    height: 70px;
+}
+
+.flex-basis-100 {
+    flex-basis: 100%;
+}
+
+.sidebar-menu li.active {
+    font-weight: bold;
+}
+
+.primary-text-color {
+    color: $primary-color;
+}
